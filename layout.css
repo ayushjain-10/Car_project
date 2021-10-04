@@ -1,0 +1,268 @@
+html {
+    scroll-behavior: smooth;
+  } 
+ body { 
+    background: #f0e9e9; }
+ 
+ header {
+    position: relative;
+    height: 800px;
+    min-height: 500px;
+    width: 100%;
+    background: #161415 url(images/cars.jpeg) no-repeat top center;
+    background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+ }
+ 
+ /* vertically center banner section */
+ header:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+ }
+ header .banner {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 30px;
+    text-align: center;
+ }
+ 
+ header .banner-text { width: 100%; }
+ header .banner-text h1 {
+    font: 90px/1.1em "Apple Chancery";
+    color: #fff;
+    letter-spacing: -2px;
+    margin: 0 auto 18px auto;
+    text-shadow: 2px 3px 5px rgba(161, 22, 22, 0.8);
+ }
+ header .banner-text h3 {
+    font: 18px/1.9em 'librebaskerville-regular', serif;
+    color: #A8A8A8;
+    margin: 0 auto;
+    width: 70%;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+ }
+ header .banner-text h3 span,
+ header .banner-text h3 a {
+    color: #fff;
+ }
+ 
+ /* header social links */
+ header .social {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+ }
+ header .social li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+ }
+ header .social li a { color: #fff; }
+ header .social li a:hover { color: #11ABB0; }
+ 
+ /* primary navigation
+ --------------------------------------------------------------------- */
+ #nav-wrap ul, #nav-wrap li, #nav-wrap a {
+      margin: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+ }
+ 
+ /* nav-wrap */
+ #nav-wrap {
+    font: 12px 'opensans-bold', sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0 auto;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+ }
+ .opaque { background-color: #333; }
+ 
+ /* hide toggle button */
+ #nav-wrap > a.btn { display: none; }
+ 
+ ul#nav {
+    min-height: 48px;
+    width: auto;
+    text-align: center;
+ }
+ ul#nav li {
+    height: 48px;
+    display: inline-block;
+ }
+ 
+ /* Links */
+ ul#nav li a {
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 20px;
+     text-decoration: none;
+    text-align: left;
+    color: rgb(50, 150, 231);
+ }
+ 
+ #about {
+    background: #2B2B2B;
+    padding-top: 56px;
+    padding-bottom: 26px;
+    overflow: hidden;
+ }
+ 
+ #about h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #about p {
+    line-height: 30px;
+    color: #7A7A7A;
+ }
+ #about .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ 
+ 
+ /* ------------------------------------------------------------------ */
+ /* d. Hisory Section
+ /* ------------------------------------------------------------------ */
+ 
+ #history {
+    background: #fff;
+ }
+ 
+ #history h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 15px;
+ }
+ #history h1 span {
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
+    
+ 
+ }
+ #history h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+    padding-top: 25px;
+ }
+ 
+ #history .header-col { padding-top: 9px; }
+ #history .main-col { padding-right: 10%; }
+ 
+ #history .info {
+    font: 20px/1.1em "Apple Chancery";
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+ }
+ #history .info span {
+    margin-right: 5px;
+    margin-left: 5px;
+ }
+ 
+ .history, .industry {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8;
+ }
+ 
+ /* ------------------------------------------------------------------ */
+ /* e. media Section
+ /* ------------------------------------------------------------------ */
+ 
+ #media {
+    background: #ebeeee;
+    padding-top: 90px;
+    padding-bottom: 60px;
+ }
+ #media h1 {
+    font: 15px/24px 'opensans-semibold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #95A3A3;
+ }
+ 
+ /* media Content */
+ #media-wrapper .columns { 
+    margin-bottom: 36px; 
+ }
+ .media-item .item-wrap {
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+ }
+ /* overlay */
+ .media-item .item-wrap .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+     opacity: 0;
+ }
+ .media-item .item-wrap .link-icon {
+    display: block;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+ }
+ .media-item .item-wrap img {
+    vertical-align: bottom;
+ }
+ .media-item .media-item-meta { 
+    padding: 18px 
+ }
+ .media-item .media-item-meta h5 {
+    font: 14px/21px 'opensans-bold', sans-serif;
+    color: #fff;
+ }
+ /* on hover */
+ .media-item:hover .overlay {
+     opacity: 1;
+ }
+ 
+ #quote {
+    background: #212121;
+    padding-top: 66px;
+    padding-bottom: 48px;
+ }
+ #quote h2 {
+    font: 28px/36px 'opensans-bold', sans-serif;
+    color: #EBEEEE;
+    margin-bottom: 6px;
+ }
+ 
+ #quote p span {
+     font-family: 'opensans-semibold', sans-serif; 
+     color: #D8D8D8;
+    font-size: 17px;
+ }
+ 
+ main > section{
+    min-height: 100vh;
+ }
+ 
